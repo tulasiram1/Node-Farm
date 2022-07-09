@@ -4,26 +4,6 @@ const http = require("http");
 
 const URL = require("node:url");
 
-// const data = fs.readFileSync(`${__dirname}/txt/input.txt`, "utf-8");
-
-// console.log(data);
-
-// fs.writeFileSync("./txt/output.txt", outdata);
-
-// console.log("written to file");
-
-// fs.readFile("./txt/input.txt", "utf-8", (err, data) => {
-//   console.log(data);
-//   console.log(new Date().getTime());
-//   const outdata = `This data is created by Tulasi Ram Reddy ${data}.\n On data: ${Date.now()}`;
-
-//   fs.writeFile("./txt/output.txt", outdata, "utf-8", (err) => {
-//     console.log(err);
-//   });
-// });
-// console.log("Hello welcome to java script");
-// console.log(new Date().getTime());
-
 const PORT = process.env.PORT || 8080;
 
 const templateReplace = (template, data) => {
@@ -80,6 +60,6 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => {
+server.listen(PORT, "https://tulasi-node-farm.herokuapp.com", () => {
   console.log("listening");
 });
